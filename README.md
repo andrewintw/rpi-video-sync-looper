@@ -48,3 +48,14 @@ $ tvservice --status
 * if hdmi_group=2 (DMT):
 	* 82 | 1080p | 60Hz | 16:9
 
+
+## Static IP Addresses
+
+/etc/dhcpcd.conf
+
+```
+interface eth0
+static ip_address=192.168.0.4/24
+static routers=192.168.0.254
+static domain_name_servers=192.168.0.254 8.8.8.8
+```
