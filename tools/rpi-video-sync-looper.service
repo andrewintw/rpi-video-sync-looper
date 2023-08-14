@@ -1,0 +1,13 @@
+[Unit]
+Description=Video Sync Looper Service
+After=network.target
+
+[Service]
+Type=simple
+
+ExecStart=/usr/bin/omxplayer-sync -mu /media/USB/GK5.m4v
+#ExecStart=/usr/bin/omxplayer-sync -lu /media/USB/GK5.m4v
+ExecStop=killall omxplayer-sync omxplayer
+
+Restart=on-failure
+RestartSec=5
