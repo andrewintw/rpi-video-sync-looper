@@ -1,0 +1,6 @@
+usb=1
+audio_source=both
+role=m
+
+
+
