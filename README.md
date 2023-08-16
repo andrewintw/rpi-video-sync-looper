@@ -8,6 +8,10 @@
 * [pi_video_looper](https://github.com/adafruit/pi_video_looper.git) (Christian Sievers)
 	* [Raspberry Pi Video Looper](https://videolooper.de/)
 	* [Raspberry Pi Video Looper](https://learn.adafruit.com/raspberry-pi-video-looper?view=all) (adafruit)
+* [MP4MUSEUM](https://mp4museum.org/) (Julius Schmiedel)
+	* [GitHub](https://github.com/JuliusCode/MP4MUSEUM)
+* [Lūpa](https://lupaplayer.com/)
+* [BrightSign](https://support.brightsign.biz/hc/en-us)
 
 
 ## The config.txt file
@@ -59,3 +63,12 @@ static ip_address=192.168.0.4/24
 static routers=192.168.0.254
 static domain_name_servers=192.168.0.254 8.8.8.8
 ```
+
+
+### Configuration
+
+* in /boot/config.txt
+	* `hdmi_force_hotplug=1`
+	* `hdmi_drive=2`
+* in /boot/cmdline.txt
+	* `consoleblank=0`
