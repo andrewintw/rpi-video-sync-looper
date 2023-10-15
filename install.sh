@@ -1,7 +1,7 @@
 #! /bin/bash
 
 GIT_REPO_RAW="https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/rootfs"
-
+sync_role="${1,,}"
 install_fstab=0
 install_rclocal=0
 
@@ -100,6 +100,14 @@ install_pkg() {
 	_install_file "/usr/local/sbin/videoplayer.sh"         "755"
 }
 
+do_setup() {
+	if [ "$sync_role" = "slave" ]; then
+		sed -i "s/video.player.role=.*/video.player.role='slave'/g"
+  	else
+   		sed -i "s/video.player.role=.*/video.player.role='master'/g"
+  	fi
+}
+
 do_restart() {
 	sudo mount -a
 	systemctl daemon-reload
@@ -143,6 +151,7 @@ do_main() {
 	do_init
 	chk_pkgs
 	install_pkg
+ 	do_setup
 	do_restart
 	do_done
 }
