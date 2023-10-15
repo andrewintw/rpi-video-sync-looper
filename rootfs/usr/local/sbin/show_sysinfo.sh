@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env bash
 
 sec="${1-10}"
 
