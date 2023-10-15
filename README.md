@@ -4,9 +4,14 @@
 ## Install
 
 install for Master (default)
+
 ```
 curl -LJs https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/install.sh | sudo bash
-# or
+```
+
+or
+
+```
 curl -LJs https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/install.sh | sudo bash -s -- master
 ```
 
