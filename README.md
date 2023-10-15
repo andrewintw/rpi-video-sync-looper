@@ -3,8 +3,16 @@
 
 ## Install
 
+install for Master (default)
 ```
 curl -LJs https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/install.sh | sudo bash
+# or
+curl -LJs https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/install.sh | sudo bash -s -- master
+```
+
+install for Slave
+```
+curl -LJs https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/install.sh | sudo bash -s -- slave
 ```
 
 ##  The shoulders of Giants
