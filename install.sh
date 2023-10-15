@@ -70,7 +70,8 @@ install_pkg() {
 	# system files
 	if [ "$install_fstab" = "1" ]; then
 		cp -a /etc/fstab /etc/fstab.BACKUP
-		_install_file "/etc/fstab"
+  		echo "/dev/sda1             /media/USB      exfat       sync,noexec,nodev,noatime,nodiratime  0       2" >> /etc/fstab
+		#_install_file "/etc/fstab"
 	fi
 
 	if [ "$install_rclocal" = "1" ]; then
@@ -101,10 +102,16 @@ install_pkg() {
 }
 
 do_setup() {
-	if [ "$sync_role" = "slave" ]; then
-		sed -i "s/video.player.role=.*/video.player.role='slave'/g"
-  	else
-   		sed -i "s/video.player.role=.*/video.player.role='master'/g"
+	local config_file="/boot/video-sync.conf"
+ 	if [ -f "$config_file" ]; then
+		if [ "$sync_role" = "slave" ]; then
+			sed -i "s/video.player.role=.*/video.player.role='slave'/g" $config_file
+  		else
+   			sed -i "s/video.player.role=.*/video.player.role='master'/g" $config_file
+      		fi
+      	else
+       		print_msg "ERRO> no such file $config_file"
+	 	exit 1
   	fi
 }
 
