@@ -101,6 +101,7 @@ install_pkg() {
 }
 
 do_restart() {
+	sudo mount -a
 	systemctl daemon-reload
 	systemctl start videoplayer-monitor.service
 	systemctl start videoplayer-monitor.timer
