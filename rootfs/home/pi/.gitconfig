@@ -1,0 +1,21 @@
+[user]
+	email = YOUR_EMAIL
+	name = YOUR_NAME
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	lg = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	sn = show --name-status
+	lo = log --pretty=oneline
+	df = "!f() { git diff --name-status; echo \"---\"; git diff --name-status --cached; }; f"
+[color]
+	ui = true
+[core]
+	editor = vim
+
+[push]
+	default = simple
+[init]
+	defaultBranch = main

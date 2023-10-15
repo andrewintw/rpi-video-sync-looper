@@ -1,0 +1,9 @@
+[Unit]
+Description=Videoplayer Monitor
+ 
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/videoplayer-monitor.sh
+
+[Install]
+WantedBy=multi-user.target

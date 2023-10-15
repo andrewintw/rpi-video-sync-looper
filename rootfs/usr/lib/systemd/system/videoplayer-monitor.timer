@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer for Videoplayer Monitor
+ 
+[Timer]
+Unit=videoplayer-monitor.service
+OnStartupSec=20s
+OnUnitActiveSec=10s
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
