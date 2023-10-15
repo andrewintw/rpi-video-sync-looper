@@ -1,6 +1,7 @@
 #! /bin/sh
 
 LOG_TAG="videoplayer"
+CONFIG_FILE="/boot/video-sync.conf"
 
 run_mode=''
 run_exec=''
@@ -12,7 +13,7 @@ run_demo=''
 
 _uci_get() {
 	local opt="$1"
-	uci -q get "$opt"
+	grep -w "$opt" $CONFIG_FILE | awk -F '=' '{print $2}' | tr -d "'"
 }
 
 _logger() {
@@ -36,6 +37,11 @@ exit_safely() {
 }
 
 chk_env() {
+	if [ ! -f "$CONFIG_FILE" ]; then
+		_logger "ERRO>> No config file $CONFIG_FILE"
+		exit 1
+	fi
+
 	run_demo=`_uci_get video.player.rundemo`
 
 	if [ "$run_demo" = "1" ]; then
