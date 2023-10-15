@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env bash
 
 # bash
 #   └─videoplayer.sh /usr/local/sbin/videoplayer.sh
