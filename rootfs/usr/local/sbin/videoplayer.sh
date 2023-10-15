@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/usr/bin/env bash
 
 LOG_TAG="videoplayer"
 CONFIG_FILE="/boot/video-sync.conf"
