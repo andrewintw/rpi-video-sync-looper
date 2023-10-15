@@ -1,6 +1,12 @@
 
 # RPi-Video-Sync-Looper
 
+## Install
+
+```
+curl -LJs https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/install.sh | sudo bash
+```
+
 ##  The shoulders of Giants
 
 * [omxplayer-sync](https://github.com/turingmachine/omxplayer-sync) (Simon Josi)
