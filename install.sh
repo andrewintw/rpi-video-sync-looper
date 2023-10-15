@@ -6,10 +6,16 @@ install_fstab=0
 install_rclocal=0
 
 chk_pkgs() {
-	for pkg in omxplayer exfat-fuse exfat-utils python3 psmisc procps; do
+	for pkg in omxplayer exfat-fuse exfat-utils python3 psmisc procps libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus; do
 		dpkg-query -W -f='${Status}' $pkg 1>/dev/null 2>&1
 		if [ "$?" != "0" ]; then
 			print_msg "ERRO> Please install \"${pkg}\" before run the script!"
+			cat << EOF
+
+Requirements:
+  omxplayer exfat-fuse exfat-utils python3 psmisc procps libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus
+
+EOF
 			exit 1
 		fi
 	done
