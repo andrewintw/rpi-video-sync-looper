@@ -131,6 +131,9 @@ COMMAND
 -------
   - Restart player
     $ sudo systemctl restart videoplayer-monitor.service
+  - show log
+    $ tail -f /var/log/syslog | grep -w -e 'videoplayer:' -e 'player-monitor:'
+    $ show_sysinfo.sh
 
 EOF
 }
