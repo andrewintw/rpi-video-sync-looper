@@ -376,7 +376,7 @@ The contents of the video-sync.conf file will look like this:
 ```connfig
 video.player=omxplayer
 video.player.mode='sync_loop'
-video.player.role='master'    # <= 改這行
+video.player.role='master'    # <= Change this
 video.player.loop='1'
 video.player.verbose='0'
 video.player.audiodev='both'
