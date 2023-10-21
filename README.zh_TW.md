@@ -359,7 +359,7 @@ sudo nano /boot/video-sync.conf
 或是簡單使用以下的方式：
 
 1. **裝置斷電**（切勿在運作時強制移除 SD 卡）
-2. 將 SD 卡取出並透過 USB 讀卡機（下圖）接入電腦
+2. 將 SD 卡取出並透過 USB 讀卡機接入電腦
 3. 開啟「boot」的磁區。找到設定檔 video-sync.conf
 4. 使用您熟悉的文字編輯編輯（ex: 記事本或 Notepad++）
 5. 編輯完後將 SD 卡插回裝置開機
