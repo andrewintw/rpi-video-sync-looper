@@ -13,7 +13,7 @@
 目前主要的應用為：
 
 * 藝術展覽現場常見的「單一影片循環撥放」應用
-* 「多螢幕影片同步播放」的藝術作品，例如：藝術家[李紫彤](https://www.tzutung.com/)的作品《[#迎靈者（#Ghostkeepers）](https://www.facebook.com/GhostKeepers)》
+* 「多螢幕影片同步播放」的藝術作品，例如：藝術家[李紫彤（LEE Tzu-Tung）](https://www.tzutung.com/)的作品《[#迎靈者（#Ghostkeepers）](https://www.facebook.com/GhostKeepers)》
 
 ![](docs/images/ghostkeepers-800.jpg)
 
