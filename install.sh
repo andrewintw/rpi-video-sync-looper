@@ -1,4 +1,11 @@
 #! /bin/bash
+#
+# Copyright 2023 Andrew Lin (https://github.com/andrewintw)
+# This Source Code Form is subject to the terms of the Mozilla
+# Public License, v. 2.0. If a copy of the MPL was not distributed
+# with this file, You can obtain one at
+# https://mozilla.org/MPL/2.0/.
+# 
 
 GIT_REPO_RAW="https://raw.githubusercontent.com/andrewintw/rpi-video-sync-looper/main/rootfs"
 sync_role="${1,,}"
