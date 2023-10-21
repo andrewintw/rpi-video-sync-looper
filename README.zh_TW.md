@@ -97,8 +97,8 @@ Raspbian 開機完成後，確認您的樹莓派已經連線至網際網路。�
 先安裝必要的套件：
 
 ```
-$ sudo apt update
-$ sudo apt install -y omxplayer exfat-fuse exfat-utils python3 psmisc procps libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus
+sudo apt update && \
+sudo apt install -y omxplayer exfat-fuse exfat-utils python3 psmisc procps libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus
 ```
 
 然後執行：
@@ -133,13 +133,13 @@ RPi-Video-Sync-Looper 的設定檔統一集中在 /boot 路徑下的 video-sync.
 如果您熟悉 Linux 的操作，可在樹莓派的終端視窗中直接編輯：
 
 ```
-$ sudo vi /boot/video-sync.conf
+sudo vi /boot/video-sync.conf
 ```
 
 或
 
 ```
-$ sudo nano /boot/video-sync.conf
+sudo nano /boot/video-sync.conf
 ```
 
 如果您不熟悉 Linux，可以先將樹莓派關機（使用指令 `sudo poweroff`）。關機後將 SD 卡取出，透過 USB 讀卡機（下圖）接入電腦。
@@ -311,13 +311,13 @@ SD 卡存放的是樹莓派的客製化作業系統，而 USB 隨身碟才是存
 如果您熟悉 Linux 指令，可以透過遠端連線至播放裝置，然後使用指令編輯設定檔
 
 ```
-$ sudo vi /boot/video-sync.conf
+sudo vi /boot/video-sync.conf
 ```
 
 或
 
 ```
-$ sudo nano /boot/video-sync.conf
+sudo nano /boot/video-sync.conf
 ```
 
 或是簡單使用以下的方式：
