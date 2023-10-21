@@ -35,7 +35,7 @@ How simple is it to use RPi-Video-Sync-Looper for the two scenarios?
 4. Insert the SD cards and a USB flash drive containing a video file into the Raspberry Pi.
 5. Once you have configured the network environment and connected the display and audio cables, simply power on the Raspberry Pi, and it will run a synchronized playback system.
 
-**you DO NOT NEED to have any Linux operating knowledge.**。
+**You DO NOT NEED to have any Linux operating knowledge.**。
 
 
 ## Key Features
