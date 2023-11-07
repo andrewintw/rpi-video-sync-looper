@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#
+# SPDX-License-Identifier: MPL-2.0
 # Copyright 2023 Andrew Lin (https://github.com/andrewintw)
 # This Source Code Form is subject to the terms of the Mozilla
 # Public License, v. 2.0. If a copy of the MPL was not distributed
