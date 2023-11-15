@@ -1,4 +1,4 @@
-[中文說明](README.zh_TW.md)
+[README.zh_TW](README.zh_TW.md)
 
 # RPi-Video-Sync-Looper
 
