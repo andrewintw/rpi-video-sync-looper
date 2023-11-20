@@ -407,9 +407,10 @@ video.player.role='slave'
 
 ## 貢獻＆聯絡
 
-若藝術家或創作者對此專案有任何想法、需求或錯誤回報，可隨時與我聯繫。
+若藝術家或創作者對此專案有任何想法、需求或錯誤回報，可隨時與我聯繫。亦歡迎任何開源社群的貢獻。您可透過 [New issue](https://github.com/andrewintw/rpi-video-sync-looper/issues) 功能開啟一個主題討論。
 
-亦歡迎任何開源社群的貢獻。您可透過 [New issue](https://github.com/andrewintw/rpi-video-sync-looper/issues) 功能開啟一個主題討論。
+若您願意給予贊助，請前往[這裡](https://github.com/andrewintw/donate)查看資訊，非常感激。
+
 
 ## 授權
 
