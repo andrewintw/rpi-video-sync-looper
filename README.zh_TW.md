@@ -1,5 +1,6 @@
 # RPi-Video-Sync-Looper
 
+[工作坊投影片](docs/2023-12-02-workshop-DAC-Taipei.pdf)
 
 **RPi-Video-Sync-Looper**（樹莓派影片同步循環播放器）是一個「針對藝術家和創作者」設計的開源播放器，專為樹莓派（Raspberry Pi）裝置打造。它允許多台樹莓派裝置各自播放不同的影片，同時確保這些影片的播放時間軸同步。無論是建置數位藝術裝置、展場影音播放，或是進行任何需要實現多螢幕影片同步播放的專案，RPi-Video-Sync-Looper 都能協助藝術家快速建置播放系統。
 
