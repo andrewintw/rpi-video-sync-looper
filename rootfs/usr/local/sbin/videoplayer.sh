@@ -77,7 +77,7 @@ update_parms() {
 	if [ "$run_demo" = "1" ]; then
 		play_files="${file_path}/synctest.mp4"
 	else
-		play_files=`find $file_path \( -name "*.mp4" -o -name "*.mkv" -o -name "*.m4v" -o -name "*.mov" -o -name "*.avi" \) | head -n 1`
+		play_files=`find $file_path \( -name "*.mp4" -o -name "*.mkv" -o -name "*.m4v" -o -name "*.mov" -o -name "*.avi" \) | sort | head -n 1`
 	fi
 
 	if [ -f "$play_files" ]; then
