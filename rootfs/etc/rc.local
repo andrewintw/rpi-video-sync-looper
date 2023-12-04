@@ -11,13 +11,23 @@
 #
 # By default this script does nothing.
 
+esc="\033"
+cyanf="${esc}[36m";
+reset="${esc}[0m"
+
 # Print the IP address
-_IP=$(hostname -I) || true
-if [ "$_IP" ]; then
-  printf "My IP address is %s\n" "$_IP"
+_IP=$(hostname -I | tr -d ' ') || true
+_MAC=$(cat /sys/class/net/eth0/address) || true
+
+if [ "$_IP" -o "$_MAC" ]; then
+  printf "${cyanf}My  IP address is %s${reset}\n" "$_IP"
+  printf "${cyanf}My MAC address is %s${reset}\n" "$_MAC"
+  if [ -f "/boot/video-sync.info" ]; then
+    sed -i "s,system.device.ipaddr=.*,system.device.ipaddr='${_IP}',g" /boot/video-sync.info
+    sed -i "s,system.device.macaddr=.*,system.device.macaddr='${_MAC}',g" /boot/video-sync.info
+  fi
 fi
 
-# add by rpi-video-sync-looper
 # cat /sys/module/kernel/parameters/consoleblank # =0
 setterm --blank 0
 
