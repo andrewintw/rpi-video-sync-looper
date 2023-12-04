@@ -1,12 +1,18 @@
 # RPi-Video-Sync-Looper
 
-[中文說明](README.zh_TW.md) | [ChangeLog](CHANGELOG.md) | [Workshop](docs/2023-12-02-workshop-DAC-Taipei.pdf)
+[中文說明](README.zh_TW.md) | [ChangeLog](CHANGELOG.md) | [Workshop](docs/2023-12-02-workshop-DAC-Taipei.pdf) | [Donate](https://github.com/andrewintw/donate)
 
 **RPi-Video-Sync-Loope**r is an open-source video player designed specifically for artists and creators, tailored for Raspberry Pi devices. It allows multiple Raspberry Pi devices to play different videos while ensuring that the playback timelines of these videos remain synchronized. Whether you are creating digital art installations, artwork introduction video, or working on any project that requires synchronized video playback across multiple screens, RPi-Video-Sync-Looper can assist artists in quickly establishing a playback system.
 
 This document will explain what RPi-Video-Sync-Looper can do and how to quickly apply it to yourartwork. It will avoid delving into too many technical details.
 
 Note: In this document, "playback devices" refer to the devices using Raspberry Pi with the RPi-Video-Sync-Looper package installed.
+
+
+## Latest Release
+
+* Operating system image（Google Drive）
+	* [rasbian-buster-videosync.img.gz](https://drive.google.com/file/d/12vLELGUK_BJGedrWqSaZTP26Sa3fQxK0/view?usp=drive_link) (v1.0.0, updated on 2023-12-04, [ChangeLog](CHANGELOG.md))
 
 
 ## Application Scenarios
