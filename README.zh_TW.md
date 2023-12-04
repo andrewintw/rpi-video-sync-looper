@@ -93,7 +93,7 @@ RPi-Video-Sync-Looper 開發與測試時所使用的樹莓派版本為 [Raspberr
 
 #### 方法一：使用預裝 RPi-Video-Sync-Looper 的 Raspbian 映像檔（建議方式）
 
-1. 下載 [rasbian-buster-videosync.img.gz](https://drive.google.com/file/d/12vLELGUK_BJGedrWqSaZTP26Sa3fQxK0/view?usp=drive_link)（v1.0.0, 2023-12-04 更新 | Google 雲端硬碟）
+1. 下載 [rasbian-buster-videosync.img.gz](#最新發布)（Google 雲端硬碟）
 2. 使用 [balenaEtcher](https://etcher.balena.io/) 將 rasbian-buster-videosync.img.gz 燒錄至 8GB 大小以上的 micro SD 卡。
 
 balenaEtcher 的操作方法非常簡單，開啟後點選「Flash from file」，然後選擇 rasbian-buster-videosync.img.gz。不需要事先解壓縮映像檔，燒錄軟體會在燒錄時自動偵測並解壓縮。
