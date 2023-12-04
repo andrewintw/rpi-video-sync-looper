@@ -95,7 +95,7 @@ There are two ways to install RPi-Video-Sync-Looper:
 
 #### Method 1: Use the Pre-installed Raspbian Image with RPi-Video-Sync-Looper (Recommended)
 
-1. Download the [rasbian-buster-videosync.img.gz](https://drive.google.com/file/d/1Ja70rtXkPDeGQ3Hvx1uGSTM6tNpmpyOp/view?usp=share_link) from Google Drive.
+1. Download the [rasbian-buster-videosync.img.gz](#latest-release) from Google Drive.
 2. Use [balenaEtcher](https://etcher.balena.io/) to burn rasbian-buster-videosync.img.gz onto a micro SD card with a capacity of 8GB or more.
 
 Using balenaEtcher is very simple. After opening it, click "Flash from file" and select the rasbian-buster-videosync.img.gz file. There's no need to unzip the image file in advance; balenaEtcher will automatically detect and decompress it during the burning process.
