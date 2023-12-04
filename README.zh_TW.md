@@ -1,12 +1,18 @@
 # RPi-Video-Sync-Looper
 
-[更新日誌](CHANGELOG.md) | [工作坊投影片](docs/2023-12-02-workshop-DAC-Taipei.pdf)
+[更新日誌](CHANGELOG.md) | [工作坊投影片](docs/2023-12-02-workshop-DAC-Taipei.pdf) | [贊助](https://github.com/andrewintw/donate)
 
 **RPi-Video-Sync-Looper**（樹莓派影片同步循環播放器）是一個「針對藝術家和創作者」設計的開源播放器，專為樹莓派（Raspberry Pi）裝置打造。它允許多台樹莓派裝置各自播放不同的影片，同時確保這些影片的播放時間軸同步。無論是建置數位藝術裝置、展場影音播放，或是進行任何需要實現多螢幕影片同步播放的專案，RPi-Video-Sync-Looper 都能協助藝術家快速建置播放系統。
 
 這份文件將說明 RPi-Video-Sync-Looper 可以做什麼，以及如何快速地將它應用於您的創作中，此文件不會涉及太多技術性的細節。
 
 註：在這份文件中，若提到「播放設備」，指的是使用樹莓派搭載 RPi-Video-Sync-Looper 套件後的播放裝置。
+
+
+## 最新發布
+
+* 映像檔（Google 雲端硬碟）
+	* [rasbian-buster-videosync.img.gz](https://drive.google.com/file/d/12vLELGUK_BJGedrWqSaZTP26Sa3fQxK0/view?usp=drive_link)（v1.0.0, 更新於 2023-12-04, [更新日誌](CHANGELOG.md)）
 
 
 ## 應用場景
@@ -87,7 +93,7 @@ RPi-Video-Sync-Looper 開發與測試時所使用的樹莓派版本為 [Raspberr
 
 #### 方法一：使用預裝 RPi-Video-Sync-Looper 的 Raspbian 映像檔（建議方式）
 
-1. 下載 [rasbian-buster-videosync.img.gz](https://drive.google.com/file/d/1Ja70rtXkPDeGQ3Hvx1uGSTM6tNpmpyOp/view?usp=share_link)（Google 雲端硬碟）
+1. 下載 [rasbian-buster-videosync.img.gz](https://drive.google.com/file/d/12vLELGUK_BJGedrWqSaZTP26Sa3fQxK0/view?usp=drive_link)（v1.0.0, 2023-12-04 更新 | Google 雲端硬碟）
 2. 使用 [balenaEtcher](https://etcher.balena.io/) 將 rasbian-buster-videosync.img.gz 燒錄至 8GB 大小以上的 micro SD 卡。
 
 balenaEtcher 的操作方法非常簡單，開啟後點選「Flash from file」，然後選擇 rasbian-buster-videosync.img.gz。不需要事先解壓縮映像檔，燒錄軟體會在燒錄時自動偵測並解壓縮。
