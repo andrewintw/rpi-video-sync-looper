@@ -1,0 +1,6 @@
+system.sysinfo=section
+system.sysinfo.version='1.0.0'
+
+system.device=section
+system.device.ipaddr='0.0.0.0'
+system.device.macaddr='00:00:00:00:00:00'
