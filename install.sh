@@ -73,6 +73,7 @@ _install_file() {
 install_pkg() {
 	# config file
 	_install_file "/boot/video-sync.conf"
+	_install_file "/boot/video-sync.info"
 
 	# system files
 	if [ "$install_fstab" = "1" ]; then
@@ -86,7 +87,9 @@ install_pkg() {
 		_install_file "/etc/rc.local" "755"
 	fi
 
-	_install_file "/home/pi/synctest.mp4"
+	if [ ! -f "/home/pi/synctest.mp4" ]; then
+		_install_file "/home/pi/synctest.mp4"
+	fi
 
 	_install_file "/usr/bin/omxplayer-sync" "755"
 
