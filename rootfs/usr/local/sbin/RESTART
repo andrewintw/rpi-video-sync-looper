@@ -1,0 +1,4 @@
+#! /bin/sh
+
+/usr/local/sbin/STOP
+/usr/local/sbin/START

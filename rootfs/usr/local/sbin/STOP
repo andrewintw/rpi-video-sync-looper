@@ -1,0 +1,4 @@
+#! /bin/sh
+
+sudo systemctl stop videoplayer-monitor.timer
+sudo systemctl stop videoplayer-monitor.service

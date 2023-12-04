@@ -1,0 +1,4 @@
+#! /bin/sh
+
+sudo systemctl start videoplayer-monitor.service
+sudo systemctl start videoplayer-monitor.timer
