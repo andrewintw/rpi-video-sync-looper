@@ -227,6 +227,7 @@ video.player.rundemo='0'
 
 另外，本專案所使用的硬體是 Raspberry Pi 3 Model B+，3B+ 版本支援的最高解析度為 1920x1080（1080p/Full HD）。若您需要使用到 2K 甚至 4K 的解析度，需要使用 Pi 4 以上的硬體進行測試。
 
+根據 [OMXPlayer-Sync](https://github.com/turingmachine/omxplayer-sync) 的官方文件指出，參與同步播放的影片長度至少須為 60 秒或更長。
 
 **所有影片檔名一致**
 
