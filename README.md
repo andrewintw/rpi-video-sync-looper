@@ -233,6 +233,7 @@ In this step, there are three key things you need to ensure:
 
 Additionally, the hardware used in this project is the Raspberry Pi 3 Model B+, which supports a maximum resolution of 1920x1080 (1080p/Full HD). If you need to use 2K or 4K resolutions, you'll need to test with Pi 4 or higher hardware.
 
+According to the documentation of [OMXPlayer-Sync](https://github.com/turingmachine/omxplayer-sync), the video must be at least 60 seconds long.
 
 **Consistent Video File Names**
 
