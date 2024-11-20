@@ -2,11 +2,11 @@
 
 [中文說明](README.zh_TW.md) | [ChangeLog](CHANGELOG.md) | [Workshop](docs/2023-12-02-workshop-DAC-Taipei.pdf) | [Donate](https://github.com/andrewintw/donate)
 
-**RPi-Video-Sync-Loope**r is an open-source video player designed specifically for artists and creators, tailored for Raspberry Pi devices. It allows multiple Raspberry Pi devices to play different videos while ensuring that the playback timelines of these videos remain synchronized. Whether you are creating digital art installations, artwork introduction video, or working on any project that requires synchronized video playback across multiple screens, RPi-Video-Sync-Looper can assist artists in quickly establishing a playback system.
+**RPi-Video-Sync-Loope**r is an open-source video player designed specifically for artists and creators, tailored for Raspberry Pi devices. It allows multiple Raspberry Pi devices to play different videos while ensuring that the playback timelines of these videos remain synchronized. RPi-Video-Sync-Looper is ideal for creating digital art installations, video introductions for artworks, or any project requiring synchronized video playback across multiple screens. It helps artists quickly set up a playback system.
 
 This document will explain what RPi-Video-Sync-Looper can do and how to quickly apply it to yourartwork. It will avoid delving into too many technical details.
 
-Note: In this document, "playback devices" refer to the devices using Raspberry Pi with the RPi-Video-Sync-Looper package installed.
+Note: In this document, the term 'playback devices' refers to devices running Raspberry Pi with the RPi-Video-Sync-Looper package installed.
 
 
 ## Latest Release
@@ -27,7 +27,7 @@ Currently, the main applications include:
 
 *Lee Tzu-Tung, "#GhostKeepers," Courtesy of MoNTUE. Photo by Wei-Cheng Huang.*
 
-How simple is it to use RPi-Video-Sync-Looper for the two scenarios?
+How easy is it to use RPi-Video-Sync-Looper for these two scenarios?
 
 **If you want to set up a "single video loop playback" device:**：
 
@@ -39,11 +39,11 @@ How simple is it to use RPi-Video-Sync-Looper for the two scenarios?
 
 1. Burn the pre-installed RPi-Video-Sync-Looper Raspbian image to multiple SD cards.
 2. Insert the SD cards into a USB card reader and read them on your computer.
-3. Using a text editor, modify the RPi-Video-Sync-Looper configuration file inside the SD cards to determine the role it will play in synchronized playback (this will be explained later).
-4. Insert the SD cards and a USB flash drive containing a video file into the Raspberry Pi.
+3. Using a text editor, modify the RPi-Video-Sync-Looper configuration file on the SD cards to determine the role it will play in synchronized playback (this will be explained later).
+4. Insert the SD cards and a USB flash drive with a video file into the Raspberry Pi.
 5. Once you have configured the network environment and connected the display and audio cables, simply power on the Raspberry Pi, and it will run a synchronized playback system.
 
-**You DO NOT NEED to have any Linux operating knowledge.**。
+**No Linux operating knowledge is required.**。
 
 
 ## Key Features
@@ -80,14 +80,14 @@ The device used for the development and testing of RPi-Video-Sync-Looper is the 
 4. Connect all Raspberry Pis participating in synchronized playback to the same local area network. You may need a switch hub and network cables.
 5. Connect the HDMI of the Raspberry Pi to a display. Sound can be output directly from the HDMI or through the 3.5mm audio jack to speakers.
 6. Insert the USB flash drive containing the video file into the Raspberry Pi before powering it on.
-7. About 20 seconds after powering on, synchronized playback should start.
+7. Synchronized playback should begin within about 20 seconds.
 
-Here are detailed explanations for each step:
+The following provides detailed explanations for each step:
 
 
 ### 1. Install RPi-Video-Sync-Looper
 
-There are two ways to install RPi-Video-Sync-Looper:
+You can install RPi-Video-Sync-Looper in two ways:
 
 * Method 1: **(Recommended!!!)** Use the pre-installed RPi-Video-Sync-Looper Raspbian image.
 * Method 2: Install the RPi-Video-Sync-Looper package in an existing Raspbian environment (requires Linux operation).
@@ -121,7 +121,7 @@ After a successful burn, the SD card will contain a Raspbian system that support
 
 This method requires Linux expertise and specific Raspbian distro requirements. Please make sure you are using `Raspbian Buster` (Debian 10). This project uses omxplayer as the video player, but newer versions of Raspbian (such as bullseye, bookworm, etc.) no longer support omxplayer.
 
-The base Linux system used in this project comes from the official Raspberry Pi release, [2023-05-03-raspios-buster-armhf-lite.img.xz](https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2023-05-03/). Raspbian typically releases two versions: a Lite version without X-window GUI (which is the chosen for this project) and a full version with a desktop environment (possibly labeled "full" in the filename). In general, you do not need a linux system with a desktop environment. However, if you prefer to configure settings through a GUI, you can install the full version of Raspbian (e.g., [2023-05-03-raspios-buster-armhf.img.xz](https://downloads.raspberrypi.com/raspios_oldstable_armhf/images/raspios_oldstable_armhf-2023-05-03/)).
+The base Linux system used in this project comes from the official Raspberry Pi release, [2023-05-03-raspios-buster-armhf-lite.img.xz](https://downloads.raspberrypi.org/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2023-05-03/). Raspbian typically releases two versions: a Lite version without X-window GUI (which is the chosen for this project) and a full version with a desktop environment (possibly labeled "full" in the filename). Generally, a Linux system with a desktop environment is not required. However, if you prefer to configure settings through a GUI, you can install the full version of Raspbian (e.g., [2023-05-03-raspios-buster-armhf.img.xz](https://downloads.raspberrypi.com/raspios_oldstable_armhf/images/raspios_oldstable_armhf-2023-05-03/)).
 
 If you are already using Raspbian Buster, you can skip the step of burning the Raspbian image. Otherwise, after downloading raspios-buster-arm64-lite.zip, use [balenaEtcher](https://etcher.balena.io/) to flash the .zip to an SD card.
 
