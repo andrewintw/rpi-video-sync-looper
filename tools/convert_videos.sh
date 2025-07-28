@@ -29,7 +29,7 @@ for f in "$@"; do
 	output="${base}_1080p_${target_fps}fps_${bitrate}.mp4"
 
 	time ffmpeg -i "$f" \
-		-vf "scale=1920:1080,rotate=PI" \
+		-vf "scale=1920:1080" \
 		-r "$target_fps" \
 		-vsync cfr \
 		-c:v libx264 -preset fast -b:v "$bitrate" \
